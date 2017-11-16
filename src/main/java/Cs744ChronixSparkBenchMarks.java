@@ -14,7 +14,7 @@ public class Cs744ChronixSparkBenchMarks {
     ChronixRDD rdd;
     try {
       rdd = csc.query(query,
-                        "http://128.104.222.123:2181", // Zookeeper host
+                        "128.104.222.123:2181", // Zookeeper host
                         "jp_us_exchange_rates", // Solr Collection for Chronix
                         new ChronixSolrCloudStorage());
       System.out.println("MIN: " + rdd.min());
